@@ -28,7 +28,7 @@ export interface User extends Document{
     isAceeptingMessage:boolean;
     isVerified:boolean;
     messages:Message[] // message ka array store ho rha hai yahan pe,jahan array ka type Message hai jo humne upar mai define kar rkha hai
-
+    
 }
 
 const UserSchema:Schema<User> = new Schema({ 
