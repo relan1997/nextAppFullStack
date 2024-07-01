@@ -23,7 +23,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Loader2 } from "lucide-react";
 
-const form = useForm({
+const form = useForm<z.infer<typeof signUpSchema>>({
   // this is the variable used by the react hook form to pass data to the backend
   // yaha pe we have just said ki jo form object return karega woh signUpSchema type ka hoga
   resolver: zodResolver(signUpSchema), // a resolver is basically a function that is used to run the schema that we have built

@@ -56,6 +56,7 @@ export const authOptions: NextAuthOptions = {
         (session.user.isVerified = token.isVerified),
           (session.user.isAcceptingMessages = token.isAcceptingMessages),
           (session.user.username = token.username);
+          //yeh jo bhi saaraa data hai woh User ke andar inject hua hai(see navbar .tsx mai tumne User from next-auth ko import kia hai na , usme yeh saara data inject hua hai)
       }
       return session;
     },
